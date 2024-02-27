@@ -91,6 +91,22 @@ export default function Rightbar({ profile }) {
             />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
+          <div className="rightbarFollowing">
+            <img
+              src="assets/person/7.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">John Carter</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="assets/person/8.jpeg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">John Carter</span>
+          </div>
         </div>
       </>
     );
