@@ -71,3 +71,27 @@ color: #1775ee;
     font-weight: 500;
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    .loginWrapper {
+      flex-direction: column;
+    }
+  
+    .loginLeft,
+    .loginRight {
+      width: 100%; 
+      align-items: center;
+      text-align: center; 
+    }
+  
+    .loginLogo {
+      font-size: 40px; 
+    }
+  
+    .loginDesc {
+      font-size: 20px; 
+    }
+  
+    .loginBox {
+      height: auto; 
+    }
+  }
