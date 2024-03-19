@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
@@ -21,13 +22,14 @@ mongoose.connect(uri)
     });
 //Middleware
 app.use(express.json());
+app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
 app.use(helmet());
 app.use(morgan("common"));
 
 app.use("/api/users", userRoute)
 app.use("/api/auth", authRoute)
 app.use("/api/posts", postRoute)
-app.listen(8080, () => {
+app.listen(8800, () => {
     console.log('server is running')
 })
 
